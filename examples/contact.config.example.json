@@ -1,0 +1,8 @@
+{
+  "proactive_enabled": false,
+  "allow_followup": true,
+  "interaction_mood_mode": "reply",
+  "fact_mode": "enforce",
+  "write_mode": "observe",
+  "life_gate_mode": "shadow"
+}

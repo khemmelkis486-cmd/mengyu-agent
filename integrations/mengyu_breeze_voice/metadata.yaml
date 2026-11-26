@@ -1,0 +1,5 @@
+name: mengyu_breeze_voice
+display_name: 梦雨语音（BreezeBlue）
+desc: 主号聊天与主动联系可自主选择短语音，失败保留文字，不自动重试扣费
+version: v1.2.5
+author: local

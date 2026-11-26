@@ -1,0 +1,5 @@
+name: mengyu_audio_listener
+display_name: 梦雨本地听觉
+desc: 识别主号音频，独立进程分析并交给现有聊天模型
+version: v0.2.1
+author: local

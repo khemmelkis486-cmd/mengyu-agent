@@ -1,0 +1,21 @@
+{
+  "enabled": false,
+  "timezone": "UTC",
+  "owner_origin": "",
+  "owner_id": "",
+  "enabled_date": null,
+  "opening_cash_cents": 30000,
+  "emergency_reserve_cents": 5000,
+  "reserve_days": 7,
+  "interval_seconds": 60,
+  "monthly_budgets": {
+    "food": 10000,
+    "transport": 2500,
+    "shopping": 4000,
+    "entertainment": 2000,
+    "gifts": 1500
+  },
+  "bill_templates": [],
+  "work_income_rules": {},
+  "savings_goals": []
+}

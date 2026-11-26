@@ -1,0 +1,79 @@
+{
+  "enabled": {
+    "type": "bool",
+    "description": "启用短语音（支持自主选择与明确请求）",
+    "default": false
+  },
+  "proxy": {
+    "type": "string",
+    "description": "语音接口代理",
+    "hint": "复用本机现有代理；网络可直连时可以留空",
+    "default": ""
+  },
+  "api_key": {
+    "type": "string",
+    "description": "BreezeBlue API Key",
+    "hint": "从 BreezeBlue 密钥页创建后粘贴，只在本机配置，不要发到QQ或聊天中",
+    "secret": true,
+    "default": ""
+  },
+  "voice_id": {
+    "type": "string",
+    "description": "正式音色 ID",
+    "hint": "填写你在语音服务中选用的音色 ID",
+    "default": ""
+  },
+  "model_id": {
+    "type": "string",
+    "description": "语音合成模型",
+    "options": [
+      "breeze-tts-2",
+      "breeze-tts-2-multilingual"
+    ],
+    "default": "breeze-tts-2-multilingual"
+  },
+  "guidance_scale": {
+    "type": "float",
+    "description": "语气指令强度（1—10）",
+    "default": 1.5
+  },
+  "max_chars": {
+    "type": "int",
+    "description": "单条语音最多字数，超出保持文字",
+    "default": 80
+  },
+  "daily_calls": {
+    "type": "int",
+    "description": "每天最多合成次数（包含未知结果的保守预留）",
+    "default": 20
+  },
+  "daily_credits": {
+    "type": "int",
+    "description": "每天最多预估积分，未知结果不自动重试",
+    "default": 100
+  },
+  "speed": {
+    "type": "float",
+    "description": "语速倍率（0.5-2.0，越小越慢）",
+    "hint": "0.95 几乎不改变音色；低于 0.9 会开始发闷、拖腔",
+    "default": 1.0
+  },
+  "lead_silence": {
+    "type": "float",
+    "description": "开口前的静音秒数",
+    "hint": "默认 0.15，太长会显得犹豫",
+    "default": 0.15
+  },
+  "volume_gain": {
+    "type": "float",
+    "description": "本地语音音量倍率（0.25—4，自动保留峰值余量）",
+    "hint": "2约增加6分贝；较响的音频会自动限制增益，避免爆音",
+    "default": 2.0
+  },
+  "tail_silence": {
+    "type": "float",
+    "description": "说完后的留白秒数",
+    "hint": "默认 0.6，像真人说完停一下，不要太长",
+    "default": 0.6
+  }
+}
